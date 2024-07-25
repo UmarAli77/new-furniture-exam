@@ -20,7 +20,6 @@ import relative1 from '../../assets/related-1.svg';
 import relative2 from '../../assets/related-2.svg';
 import relative3 from '../../assets/related-3.svg';
 import Link from "next/link";
-import CartClient from "@/app/cartClient/page";
 
 
 
@@ -78,7 +77,6 @@ export default async function PagePro({ params }: { params: { id: string } }) {
                     <p className="text-sm font-normal text-gray-400">Color</p>
                     <button className={`bg-${product.color}-600 w-10 h-10 rounded-full my-3`}></button>
                     <div className="flex items-center gap-5">
-                        <CartClient message={`${product._id}`} />
                         <button className="w-[200px] h-[60px] border rounded-xl border-black">+ Compare</button>
                     </div>
                     <hr className="border my-10" />
